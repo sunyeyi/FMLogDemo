@@ -23,7 +23,7 @@ public:
 private:
     std::queue<CFMLogItem*> m_theQuenu;
     CCriticalSection m_theQuenuCriticalSection;
-    int m_nMax;
+    size_t m_nMax;
 };
 
 #endif // FMThreadSafeQueue_h__
