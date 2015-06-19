@@ -1,3 +1,20 @@
+///@file FMLogItem.h
+/// <summary>
+///   
+/// </summary>
+/// -------------------------------------------------------------------------<BR>
+/// <description>
+/// <BR>
+/// </description>
+/// <BR>
+/// Created By: yysun <BR>
+/// Creation Date: Friday June 19, 2015 <BR> 
+/// Reviewed By: <BR>
+/// Review Date: <BR>
+/// -------------------------------------------------------------------------<BR>
+///@addtogroup FMLog FMLog
+///@{
+
 #ifndef FMLogItem_h__
 #define FMLogItem_h__
 
@@ -25,3 +42,5 @@ private:
 _FMLogNamespaceEnd
 
 #endif // FMLogItem_h__
+
+///@}//end of addtogroup FMLog FMLog

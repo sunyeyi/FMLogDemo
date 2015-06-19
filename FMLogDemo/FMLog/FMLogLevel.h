@@ -1,3 +1,20 @@
+///@file FMLogLevel.h
+/// <summary>
+///   
+/// </summary>
+/// -------------------------------------------------------------------------<BR>
+/// <description>
+/// <BR>
+/// </description>
+/// <BR>
+/// Created By: yysun <BR>
+/// Creation Date: Friday June 19, 2015 <BR> 
+/// Reviewed By: <BR>
+/// Review Date: <BR>
+/// -------------------------------------------------------------------------<BR>
+///@addtogroup FMLog FMLog
+///@{
+
 #ifndef FMLogLevel_h__
 #define FMLogLevel_h__
 
@@ -33,3 +50,5 @@ public:
 _FMLogNamespaceEnd
 
 #endif // FMLogLevel_h__
+
+///@}//end of addtogroup FMLog FMLog

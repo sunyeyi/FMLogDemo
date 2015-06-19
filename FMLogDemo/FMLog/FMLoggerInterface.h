@@ -1,3 +1,19 @@
+///@file FMLoggerInterface.h
+/// <summary>
+///   
+/// </summary>
+/// -------------------------------------------------------------------------<BR>
+/// <description>
+/// <BR>
+/// </description>
+/// <BR>
+/// Created By: yysun <BR>
+/// Creation Date: Friday June 19, 2015 <BR> 
+/// Reviewed By: <BR>
+/// Review Date: <BR>
+/// -------------------------------------------------------------------------<BR>
+///@addtogroup FMLog FMLog
+///@{
 
 #ifndef FMLoggerInterface_h__
 #define FMLoggerInterface_h__
@@ -156,3 +172,5 @@ FMLOG_MODULE_DECLARE(FMGlobal);
 
 
 #endif // FMLoggerInterface_h__
+
+///@}//end of addtogroup FMLog FMLog

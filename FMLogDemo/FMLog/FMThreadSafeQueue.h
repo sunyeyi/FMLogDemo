@@ -1,3 +1,20 @@
+///@file FMThreadSafeQueue.h
+/// <summary>
+///   
+/// </summary>
+/// -------------------------------------------------------------------------<BR>
+/// <description>
+/// <BR>
+/// </description>
+/// <BR>
+/// Created By: yysun <BR>
+/// Creation Date: Friday June 19, 2015 <BR> 
+/// Reviewed By: <BR>
+/// Review Date: <BR>
+/// -------------------------------------------------------------------------<BR>
+///@addtogroup FMLog FMLog
+///@{
+
 #ifndef FMThreadSafeQueue_h__
 #define FMThreadSafeQueue_h__
 
@@ -32,3 +49,5 @@ private:
 _FMLogNamespaceEnd
 
 #endif // FMThreadSafeQueue_h__
+
+///@}//end of addtogroup FMLog FMLog

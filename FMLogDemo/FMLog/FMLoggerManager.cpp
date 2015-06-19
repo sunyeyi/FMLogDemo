@@ -1,3 +1,18 @@
+///@file FMLoggerManager.cpp
+/// <summary>
+///   
+/// </summary>
+/// -------------------------------------------------------------------------<BR>
+/// <description>
+/// <BR>
+/// </description>
+/// <BR>
+/// Created By: yysun<BR>
+/// Creation Date: Friday June 19, 2015 <BR>  
+/// Reviewed By: <BR>
+/// Review Date: <BR>
+/// -------------------------------------------------------------------------<BR>
+
 #include "stdafx.h"
 #include "FMLogger.h"
 #include "FMLoggerManager.h"
