@@ -2,10 +2,13 @@
 #include "FMLogger.h"
 #include "FMLogWriter.h"
 #include "FMLoggerManager.h"
+#include "FMLogNamespaceMacro.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
 #endif
+
+_FMLogNamespaceBegin
 
 CFMLogWriter& CFMLogger::ms_refLogWriter = CFMLogWriter::GetInstance();
 
@@ -41,3 +44,5 @@ void CFMLogger::SetLogLevel(EFMLogLevel eLogLevel)
 {
     m_eLogLevel = eLogLevel;
 }
+
+_FMLogNamespaceEnd

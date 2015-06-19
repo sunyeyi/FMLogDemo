@@ -1,10 +1,13 @@
 #include "StdAfx.h"
 #include "FMThreadSafeQueue.h"
 #include "FMOutputDebugString.h"
+#include "FMLogNamespaceMacro.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
 #endif
+
+_FMLogNamespaceBegin
 
 CFMThreadSafeLogQueue::CFMThreadSafeLogQueue(int nMax)
     : m_nMax(nMax)
@@ -68,3 +71,5 @@ bool CFMThreadSafeLogQueue::IsFull()
     bool bIsFull = (m_theQuenu.size() == m_nMax);
     return bIsFull;
 }
+
+_FMLogNamespaceEnd

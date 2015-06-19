@@ -3,8 +3,13 @@
 #define FMLogger_h__
 
 #pragma once
+
 #include <map>
 #include "FMLogLevel.h"
+#include "FMLogNamespaceMacro.h"
+
+_FMLogNamespaceBegin
+
 
 class CFMLogWriter;
 
@@ -28,6 +33,9 @@ private:
 private:
     static CFMLogWriter& ms_refLogWriter;
 };
+
+
+_FMLogNamespaceEnd
 
 #endif // FMLogger_h__
 

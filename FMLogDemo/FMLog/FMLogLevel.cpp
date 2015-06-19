@@ -1,9 +1,12 @@
 #include "StdAfx.h"
 #include "FMLogLevel.h"
+#include "FMLogNamespaceMacro.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
 #endif
+
+_FMLogNamespaceBegin
 
 CFMLogLevel::CFMLogLevel()
 {
@@ -41,3 +44,5 @@ LPCTSTR CFMLogLevel::To3LetterString(EFMLogLevel eLogLevel)
         return _T("!!!");
     }
 }
+
+_FMLogNamespaceEnd

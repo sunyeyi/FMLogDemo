@@ -66,6 +66,9 @@
     <ClInclude Include="FMLog\FMFormatMessage.h">
       <Filter>FMLog</Filter>
     </ClInclude>
+    <ClInclude Include="FMLog\FMLogNamespaceMacro.h">
+      <Filter>FMLog</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="FMLogDemo.cpp">

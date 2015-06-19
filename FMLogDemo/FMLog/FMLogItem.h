@@ -5,6 +5,9 @@
 
 #include <queue>
 #include <afxmt.h>
+#include "FMLogNamespaceMacro.h"
+
+_FMLogNamespaceBegin
 
 class CFMLogItem
 {
@@ -18,5 +21,7 @@ public:
 private:
     CString m_strLogMsg;
 };
+
+_FMLogNamespaceEnd
 
 #endif // FMLogItem_h__

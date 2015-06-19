@@ -1,7 +1,11 @@
 #ifndef FMLogLevel_h__
 #define FMLogLevel_h__
 
+#include "FMLogNamespaceMacro.h"
+
 #pragma once
+
+_FMLogNamespaceBegin
 
 enum EFMLogLevel
 {
@@ -25,5 +29,7 @@ public:
 public:
     static LPCTSTR To3LetterString(EFMLogLevel eLogLevel);
 };
+
+_FMLogNamespaceEnd
 
 #endif // FMLogLevel_h__

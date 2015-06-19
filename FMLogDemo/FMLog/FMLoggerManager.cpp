@@ -1,10 +1,13 @@
 #include "stdafx.h"
 #include "FMLogger.h"
 #include "FMLoggerManager.h"
+#include "FMLogNamespaceMacro.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
 #endif
+
+_FMLogNamespaceBegin
 
 CFMLoggerManager& CFMLoggerManager::GetInstance()
 {
@@ -35,3 +38,6 @@ void CFMLoggerManager::SetLevelForAllLogger(EFMLogLevel eLogLevel)
         it->second->SetLogLevel(eLogLevel);
     }
 }
+
+_FMLogNamespaceEnd
+

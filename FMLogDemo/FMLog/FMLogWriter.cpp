@@ -3,12 +3,15 @@
 #include "FMLogItem.h"
 #include "FMLogLevel.h"
 #include "FMOutputDebugString.h"
+#include "FMLogNamespaceMacro.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
 #endif
 
 #define DEBUG_LOG_WRITER 0
+
+_FMLogNamespaceBegin
 
 //default log file size: 20M 
 #define MaxSizeMegabyteOfLogFile 100
@@ -327,3 +330,5 @@ void CFMLogWriter::SetLogFileName(CString val)
     delete m_pLogFileMutex;
     m_pLogFileMutex = new CMutex(0, m_strLogFileName);
 }
+
+_FMLogNamespaceEnd

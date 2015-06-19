@@ -192,6 +192,7 @@
     <ClInclude Include="FMLog\FMLoggerManager.h" />
     <ClInclude Include="FMLog\FMLogItem.h" />
     <ClInclude Include="FMLog\FMLogLevel.h" />
+    <ClInclude Include="FMLog\FMLogNamespaceMacro.h" />
     <ClInclude Include="FMLog\FMLogWriter.h" />
     <ClInclude Include="FMLog\FMOutputDebugString.h" />
     <ClInclude Include="FMLog\FMThreadSafeQueue.h" />

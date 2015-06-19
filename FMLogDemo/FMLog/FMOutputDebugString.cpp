@@ -1,9 +1,12 @@
 #include "StdAfx.h"
 #include "FMOutputDebugString.h"
+#include "FMLogNamespaceMacro.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
 #endif
+
+_FMLogNamespaceBegin
 
 static const CString strFM = _T("#FM# ");
 
@@ -19,3 +22,5 @@ void FMOutputDebugString(LPCTSTR lpszFormat, ...)
 
     OutputDebugString(strFM + strMsg);
 }
+
+_FMLogNamespaceEnd

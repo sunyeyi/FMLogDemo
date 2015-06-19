@@ -8,6 +8,9 @@
 #include <afxmt.h>
 #include "FMUncopyable.h"
 #include "FMThreadSafeQueue.h"
+#include "FMLogNamespaceMacro.h"
+
+_FMLogNamespaceBegin
 
 class CFMLogItem;
 
@@ -58,6 +61,8 @@ private:
     size_t m_nMaxSizeByteOfLogFile;
     CMutex*  m_pLogFileMutex;
 };
+
+_FMLogNamespaceEnd
 
 #endif // FMLogWriter_h__
 

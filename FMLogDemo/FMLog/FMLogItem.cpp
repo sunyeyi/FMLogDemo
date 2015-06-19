@@ -1,9 +1,12 @@
 #include "stdafx.h"
 #include "FMLogItem.h"
+#include "FMLogNamespaceMacro.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
 #endif
+
+_FMLogNamespaceBegin
 
 void CFMLogItem::SetLogMsg(const CString& strErrMsg, const CString strUser, const CString& strModule, const CString& strLevel
     , LPCSTR strSourceCodeFile, int nSourceCodeLine, LPCSTR strSourceCodeFunction
@@ -43,3 +46,6 @@ const CString& CFMLogItem::GetLogMsg() const
 {
     return m_strLogMsg;
 }
+
+_FMLogNamespaceEnd
+

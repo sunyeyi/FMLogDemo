@@ -4,6 +4,9 @@
 #pragma once
 #include <map>
 #include "FMUncopyable.h"
+#include "FMLogNamespaceMacro.h"
+
+_FMLogNamespaceBegin
 
 class CFMLoggerManager : private CFMUncopyable
 {
@@ -19,5 +22,7 @@ private:
 private:
     std::map<CString, CFMLogger*> m_mapModuleToLoger; //keep all logger instances
 };
+
+_FMLogNamespaceEnd
 
 #endif // FMLoggerManager_h__
