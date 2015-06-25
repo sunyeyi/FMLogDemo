@@ -26,7 +26,8 @@ _FMLogNamespaceBegin
 
 enum EFMLogLevel
 {
-    eFMLogLevelSpecialInfo = -1, //output always but no error info.
+    eFMLogLevelOff,
+    eFMLogLevelSpecialInfo = -1,
     eFMLogLevelUnknown = 0,
     eFMLogLevelFatal = 1,
     eFMLogLevelError = 2,
@@ -35,6 +36,7 @@ enum EFMLogLevel
     eFMLogLevelDebug = 5,
     eFMLogLevelTrace = 6,
     eFMLogLevelTemp = 7,
+    eFMLogLevelAll = 9999,
 };
 
 class CFMLogLevel

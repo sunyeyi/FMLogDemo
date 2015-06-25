@@ -13,7 +13,7 @@
 /// Review Date: <BR>
 /// -------------------------------------------------------------------------<BR>
 
-#include "StdAfx.h"
+#include "StdAfxFMDLL.h"
 #include "FMLogLevel.h"
 #include "FMLogNamespaceMacro.h"
 

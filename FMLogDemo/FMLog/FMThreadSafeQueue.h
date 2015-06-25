@@ -22,6 +22,7 @@
 #include <queue>
 #include "FMUncopyable.h"
 #include "FMLogNamespaceMacro.h"
+#include <afxmt.h>
 
 _FMLogNamespaceBegin
 

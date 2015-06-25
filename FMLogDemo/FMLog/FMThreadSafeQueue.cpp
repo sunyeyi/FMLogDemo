@@ -13,7 +13,7 @@
 /// Review Date: <BR>
 /// -------------------------------------------------------------------------<BR>
 
-#include "StdAfx.h"
+#include "StdAfxFMDLL.h"
 #include "FMThreadSafeQueue.h"
 #include "FMOutputDebugString.h"
 #include "FMLogNamespaceMacro.h"
@@ -44,17 +44,9 @@ bool CFMThreadSafeLogQueue::IsEmpty()
 
 void CFMThreadSafeLogQueue::PushBack(CFMLogItem* pItem)
 {
-    while (m_theQuenu.size() > m_nMax-1)
-    {
-        FMOutputDebugString(_T("Log queue is full. Count: %d\n"), m_theQuenu.size());
-        Sleep(200);
-    }
+    CSingleLock logQueueLock(&m_theQuenuCriticalSection, TRUE);
 
-    {
-        CSingleLock logQueueLock(&m_theQuenuCriticalSection, TRUE);
-
-        m_theQuenu.push(pItem);
-    }
+    m_theQuenu.push(pItem);
 }
 
 CFMLogItem* CFMThreadSafeLogQueue::PopFront()
@@ -83,7 +75,7 @@ bool CFMThreadSafeLogQueue::IsFull()
 {
     CSingleLock logQueueLock(&m_theQuenuCriticalSection, TRUE);
 
-    bool bIsFull = (m_theQuenu.size() == m_nMax);
+    bool bIsFull = (m_theQuenu.size() >= m_nMax);
     return bIsFull;
 }
 

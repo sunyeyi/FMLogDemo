@@ -13,7 +13,7 @@
 /// Review Date: <BR>
 /// -------------------------------------------------------------------------<BR>
 
-#include "StdAfx.h"
+#include "StdAfxFMDLL.h"
 #include "FMOutputDebugString.h"
 #include "FMLogNamespaceMacro.h"
 
@@ -23,7 +23,9 @@
 
 _FMLogNamespaceBegin
 
-static const CString strFM = _T("#FM# ");
+const CString g_strLogModuleName = _T("FMLogSys");
+static const CString g_strFM = _T("#FM# ");
+static const CString g_strFMLog = _T("#FM# FMLogSys ");
 
 void FMOutputDebugString(LPCTSTR lpszFormat, ...)
 {
@@ -35,7 +37,20 @@ void FMOutputDebugString(LPCTSTR lpszFormat, ...)
 
     va_end(argList);
 
-    OutputDebugString(strFM + strMsg);
+    OutputDebugString(g_strFM + strMsg);
+}
+
+void FMLogOutputDebugString(LPCTSTR lpszFormat, ...)
+{
+    va_list argList;
+    va_start(argList, lpszFormat);
+
+    CString strMsg;
+    strMsg.FormatV(lpszFormat, argList);
+
+    va_end(argList);
+
+    OutputDebugString(g_strFMLog + strMsg);
 }
 
 _FMLogNamespaceEnd

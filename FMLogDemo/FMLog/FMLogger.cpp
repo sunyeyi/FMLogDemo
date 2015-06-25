@@ -13,7 +13,7 @@
 /// Review Date: <BR>
 /// -------------------------------------------------------------------------<BR>
 
-#include "stdafx.h"
+#include "StdAfxFMDLL.h"
 #include "FMLogger.h"
 #include "FMLogWriter.h"
 #include "FMLoggerManager.h"
@@ -25,7 +25,7 @@
 
 _FMLogNamespaceBegin
 
-CFMLogWriter& CFMLogger::ms_refLogWriter = CFMLogWriter::GetInstance();
+//CFMLogWriter& CFMLogger::ms_refLogWriter = CFMLogWriter::GetInstance();
 
 CFMLogger::CFMLogger(const CString& strModule)
     : m_strModule(strModule)
@@ -51,7 +51,7 @@ bool CFMLogger::IsLevelLogged(EFMLogLevel eMessageLevel)
 
 void CFMLogger::Write(const CString& strErrMsg, const CString strUser, EFMLogLevel eMessageLevel, LPCSTR strSourceCodeFile, int nSourceCodeLine, LPCSTR strSourceCodeFunction)
 {
-    ms_refLogWriter.Write(strErrMsg, strUser, m_strModule, CFMLogLevel::To3LetterString(eMessageLevel)
+    CFMLogWriter::GetInstance().Write(strErrMsg, strUser, m_strModule, CFMLogLevel::To3LetterString(eMessageLevel)
         , strSourceCodeFile, nSourceCodeLine, strSourceCodeFunction);
 }
 

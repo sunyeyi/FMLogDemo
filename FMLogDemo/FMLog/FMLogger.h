@@ -29,7 +29,7 @@ _FMLogNamespaceBegin
 
 class CFMLogWriter;
 
-class CFMLogger
+class __declspec(dllexport) CFMLogger
 {
 public:
     CFMLogger(const CString& strModule);
@@ -47,7 +47,7 @@ private:
     EFMLogLevel m_eLogLevel;
 
 private:
-    static CFMLogWriter& ms_refLogWriter;
+    //static CFMLogWriter& ms_refLogWriter;
 };
 
 

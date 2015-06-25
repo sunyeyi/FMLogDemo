@@ -1,4 +1,4 @@
-///@file FMOutputDebugString.h
+///@file FMSetThreadName.h
 /// <summary>
 ///   
 /// </summary>
@@ -15,19 +15,20 @@
 ///@addtogroup FMLog FMLog
 ///@{
 
-#ifndef FMOutputDebugString_h__
-#define FMOutputDebugString_h__
-
+#ifndef FMSetThreadName_h__
+#define FMSetThreadName_h__
 #pragma once
 
+#include <wtypes.h>
 #include "FMLogNamespaceMacro.h"
+
 
 _FMLogNamespaceBegin
 
-void FMOutputDebugString(LPCTSTR lpszFormat, ...);
+void FMSetThreadName(DWORD dwThreadID, char* threadName);
 
 _FMLogNamespaceEnd
 
-#endif // FMOutputDebugString_h__
+#endif // FMSetThreadName_h__
 
 ///@}//end of addtogroup FMLog FMLog
