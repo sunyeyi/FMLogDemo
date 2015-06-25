@@ -1,4 +1,4 @@
-///@file FMLoggerInterface.h
+﻿///@file FMLoggerInterface.h
 /// <summary>
 ///   
 /// </summary>

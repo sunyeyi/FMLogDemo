@@ -2,7 +2,7 @@
 // FMLogDemo.cpp : Defines the class behaviors for the application.
 //
 
-#include "stdafx.h"
+#include "StdAfxFMDLL.h"
 #include "FMLogDemo.h"
 #include "FMLogDemoDlg.h"
 #include "FMLog\FMLoggerInterface.h"
@@ -112,7 +112,9 @@ BOOL CFMLogDemoApp::InitInstance()
 	}
 
 
-    FMLOG_INFO_SPE(CFMLogDemoApp, _T("END"));;
+    FMLOG_INFO_SPE(CFMLogDemoApp, _T("END"));
+
+    FMLOG_END(_T("CFMLogDemoApp::InitInstance() exit normally"));
 
 	// Since the dialog has been closed, return FALSE so that we exit the
 	//  application, rather than start the application's message pump.

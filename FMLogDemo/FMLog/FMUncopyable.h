@@ -1,4 +1,4 @@
-///@file FMUncopyable.h
+﻿///@file FMUncopyable.h
 /// <summary>
 ///   
 /// </summary>

@@ -1,4 +1,4 @@
-///@file FMSetThreadName.cpp
+﻿///@file FMSetThreadName.cpp
 /// <summary>
 ///   
 /// </summary>

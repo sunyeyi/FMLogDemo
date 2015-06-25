@@ -2,7 +2,7 @@
 // FMLogDemoDlg.cpp : implementation file
 //
 
-#include "stdafx.h"
+#include "StdAfxFMDLL.h"
 #include "FMLogDemo.h"
 #include "FMLogDemoDlg.h"
 #include "afxdialogex.h"
@@ -258,6 +258,13 @@ void MoreAndMoreTest()
     FMLOG_ALWAYS_V(TestModule, _T("log message %d,%f,%s"), 18, 123.4, _T("Hello FMLog"));
     FMLOG_ALWAYS_N(_T("log message "));
     FMLOG_ALWAYS_NV(_T("log message %d,%f,%s"), 18, 123.4, _T("Hello FMLog"));
+
+    int x = 3;
+    FMLOG_ASSERT((x == 2), _T("wrong expression"));
+    FMLOG_ASSERT_V((x == 2), _T("wrong expression. x = %d"), x);
+    x = 2;
+    FMLOG_ASSERT((x == 2), _T("wrong expression"));
+    FMLOG_ASSERT_V((x == 2), _T("wrong expression. x = %d"), x);
 }
 
 UINT AddLogThreadProc(LPVOID pParam)

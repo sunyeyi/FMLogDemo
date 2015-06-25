@@ -1,4 +1,4 @@
-///@file FMSetThreadName.h
+﻿///@file FMSetThreadName.h
 /// <summary>
 ///   
 /// </summary>

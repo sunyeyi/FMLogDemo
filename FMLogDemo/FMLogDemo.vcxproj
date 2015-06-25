@@ -89,6 +89,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
+      <PrecompiledHeaderFile>StdAfxFMDLL.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -136,6 +137,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
+      <PrecompiledHeaderFile>StdAfxFMDLL.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -195,10 +197,11 @@
     <ClInclude Include="FMLog\FMLogNamespaceMacro.h" />
     <ClInclude Include="FMLog\FMLogWriter.h" />
     <ClInclude Include="FMLog\FMOutputDebugString.h" />
+    <ClInclude Include="FMLog\FMSetThreadName.h" />
     <ClInclude Include="FMLog\FMThreadSafeQueue.h" />
     <ClInclude Include="FMLog\FMUncopyable.h" />
     <ClInclude Include="Resource.h" />
-    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="StdAfxFMDLL.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
@@ -212,6 +215,7 @@
     <ClCompile Include="FMLog\FMLogLevel.cpp" />
     <ClCompile Include="FMLog\FMLogWriter.cpp" />
     <ClCompile Include="FMLog\FMOutputDebugString.cpp" />
+    <ClCompile Include="FMLog\FMSetThreadName.cpp" />
     <ClCompile Include="FMLog\FMThreadSafeQueue.cpp" />
     <ClCompile Include="FMLog\FMUncopyable.cpp" />
     <ClCompile Include="stdafx.cpp">

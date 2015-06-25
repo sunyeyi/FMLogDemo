@@ -1,4 +1,4 @@
-///@file FMThreadSafeQueue.h
+﻿///@file FMThreadSafeQueue.h
 /// <summary>
 ///   
 /// </summary>
